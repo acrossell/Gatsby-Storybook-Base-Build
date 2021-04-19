@@ -1,10 +1,27 @@
 import React from 'react'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
 import './Heading.scss'
 
-const Heading = ({children}) => {
+const Heading = ({children, level, className}) => {
+
+  const Element = `h${level}`
+  
   return(
-    <h1>{children}</h1>
+    <Element>{children}</Element>
   );
+}
+
+Heading.defaultProps = {
+  level: null,
+  className: null,
+  children: null
+}
+
+Heading.propTypes = {
+  level: PropTypes.number,
+  className: PropTypes.string,
+  children: PropTypes.string
 }
 
 export default Heading
