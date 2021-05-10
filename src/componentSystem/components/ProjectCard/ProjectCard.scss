@@ -1,14 +1,14 @@
 .projectCard{
-  text-decoration: none;
   display: block; //set to block to enable tranform
+  text-decoration: none;
   transition: transform .5s;
 
   h2{
-    color: hsl(0, 0, 0);
+    color: hsl(0, 0%, 0%);
   }
 
   .projectCard__imageWrapper{
-    box-shadow: 0 2px 45px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 2px 45px 0 hsl(0, 0%, 90%);
     margin: 0 0 1.6rem 0;
   }
 

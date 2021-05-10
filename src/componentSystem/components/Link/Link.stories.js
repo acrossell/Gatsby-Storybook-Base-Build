@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Anchor from './Link';
 
-storiesOf('Design System/Link', module).add('Blue Button Link', () => (
+storiesOf('Design System/Link', module).add('Button Link', () => (
   <Anchor to="/linkDestination">This is a button style link</Anchor>
 ));
 

@@ -2,7 +2,6 @@ import React, { useState, createContext } from 'react';
 import PropTypes from 'prop-types';
 
 import '../../../globalStyles/main.scss'
-import Background from '../../components/Background/Background';
 import GlobalNavigation from '../../components/Navigation/Navigation';
 
 const Layout = ({ClassName, children, hasImage}) => {
@@ -10,7 +9,6 @@ const Layout = ({ClassName, children, hasImage}) => {
     <main className={`hasBackground container ${ClassName}`}>
       <GlobalNavigation></GlobalNavigation>
       {children}
-      <Background hasImage={hasImage} />
     </main>
   );
 };

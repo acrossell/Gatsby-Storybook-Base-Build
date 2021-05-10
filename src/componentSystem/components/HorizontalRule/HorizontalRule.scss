@@ -1,5 +1,5 @@
 .horizontalRule{
-  background-color: hsl(212, 80, 42);
+  background-color: hsl(212, 80%, 42%);
   border: 0;
   height: .8rem;
   margin: 0 0 4rem 0;
@@ -7,7 +7,7 @@
   width: 33%;
 
   &:after{
-    background-color: hsl(212, 80, 42);
+    background-color: hsl(212, 80%, 42%);
     content: "";
     height: .8rem;
     position: absolute;
@@ -17,7 +17,7 @@
   }
 
   &:before{
-    background-color: hsl(212, 80, 42);
+    background-color: hsl(212, 80%, 42%);
     content: "";
     height: .8rem;
     position: absolute;

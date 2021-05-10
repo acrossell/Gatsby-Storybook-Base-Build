@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import LinkFade from '../LinkFade/LinkFade';
+import Anchor from '../Link/Link'
 import { globalHistory } from '@reach/router'
 
 import './Navigation.scss';
@@ -40,13 +40,13 @@ const GlobalNavigation = () => {
         <ul className="globalNavigation__list">
           <li className="globalNavigation__list__item globalNavigation__list__item--hide"><Button className={`button--iconOnly button--iconMenu ${NavigationStateContext.isOpen ? 'button--iconMenu--open' : ''}`} onClickFunction={toggle}></Button></li>
           <li className="globalNavigation__list__item">
-            <LinkFade url={'/'}>Home</LinkFade>
+            <Anchor linkDestination={'/'}>Home</Anchor>
           </li>
           <li className="globalNavigation__list__item">
-            <LinkFade url={'/work'}>Work</LinkFade>
+            <Anchor linkDestination={'/work'}>Work</Anchor>
           </li>
           <li className="globalNavigation__list__item">
-            <LinkFade url={'/case-study'}>Case Study</LinkFade>
+            <Anchor linkDestination={'/case-study'}>Case Study</Anchor>
           </li>
         </ul>
       </div>
