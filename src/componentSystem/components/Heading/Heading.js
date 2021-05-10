@@ -1,27 +1,23 @@
-import React from 'react'
-import classNames from 'classnames'
-import PropTypes from 'prop-types'
-import './Heading.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Heading.scss';
 
-const Heading = ({children, level, className}) => {
+const Heading = ({ children, level, spacing }) => {
+  const Element = `h${level}`;
 
-  const Element = `h${level}`
-  
-  return(
-    <Element>{children}</Element>
-  );
-}
+  return <Element className={spacing}>{children}</Element>;
+};
 
 Heading.defaultProps = {
   level: null,
-  className: null,
-  children: null
-}
+  children: null,
+  spacing: null,
+};
 
 Heading.propTypes = {
   level: PropTypes.number,
-  className: PropTypes.string,
-  children: PropTypes.string
-}
+  children: PropTypes.string,
+  spacing: PropTypes.string,
+};
 
-export default Heading
+export default Heading;

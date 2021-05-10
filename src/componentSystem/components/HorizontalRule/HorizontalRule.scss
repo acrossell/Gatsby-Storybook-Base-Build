@@ -1,0 +1,28 @@
+.horizontalRule{
+  background-color: hsl(212, 80, 42);
+  border: 0;
+  height: .8rem;
+  margin: 0 0 4rem 0;
+  position: relative;
+  width: 33%;
+
+  &:after{
+    background-color: hsl(212, 80, 42);
+    content: "";
+    height: .8rem;
+    position: absolute;
+    right: -24px;
+    transform: rotate(45deg);
+    width: .8rem;
+  }
+
+  &:before{
+    background-color: hsl(212, 80, 42);
+    content: "";
+    height: .8rem;
+    position: absolute;
+    right: -48px;
+    transform: rotate(45deg);
+    width: .8rem;
+  }
+}

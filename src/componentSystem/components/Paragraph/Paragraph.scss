@@ -1,6 +1,12 @@
 .paragraph{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin: 0 0 2.4rem;
 
   &.isLeadIn{
-    font-weight: 900;
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 3.1rem;
   }
 }

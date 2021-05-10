@@ -1,0 +1,69 @@
+.button{
+  background-color: hsl(215, 100, 28%);
+  border: none;
+  box-shadow: rgb(0 60 143 / 30%) 0 0 0;
+  color: hsl(100, 100, 100);
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.6rem 2.4rem;
+  transition: background-color .5s, box-shadow .5s;
+
+  &:hover{
+    background-color: hsl(215, 100, 40%);
+    box-shadow: rgb(0 60 143 / 30%) 0 0 3.2rem;
+  }
+  
+  &:active{
+    background-color: hsl(215, 100, 28%);
+    box-shadow: rgb(0 60 143 / 30%) 0 0 0rem;
+  }
+
+  &:focus{
+    background-color: hsl(215, 100, 40%);
+    outline: none;
+  }
+}
+
+.button--iconOnly{
+  height: 4.8rem;
+  width: 4.8rem;
+  padding: 0;
+  transform: rotate(45deg);
+  transition: transform .5s, background-color .5s, box-shadow .5s;
+
+  &:before{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 3.2rem;
+    left: .8rem;
+    position: absolute;
+    top: .8rem;
+    transform: rotate(-45deg);
+    transition: .5s;
+    width: 3.2rem;
+  }
+
+  &:hover{
+    transform: rotate(0);
+
+    &:before{
+      transform: rotate(0) scale(1.25);
+    }
+  }
+}
+
+.button--iconMenu{
+  &::before{
+    background-image: url('../../../images/svg/icon-openMenu.svg');
+  }
+}
+
+.button--iconMenu--open{
+  &::before{
+    background-image: url('../../../images/svg/icon-closeMenu.svg');
+  }
+}

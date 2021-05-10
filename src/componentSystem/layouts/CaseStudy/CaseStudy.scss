@@ -1,0 +1,42 @@
+.caseStudyLayout{
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  width: 100vw;
+
+  .caseStudyLayout__columnA{
+    padding: 0 4.8rem 16rem 4.8rem;
+    order: 2;
+  }
+
+  .caseStudyLayout__columnB{
+    padding: 36rem 4.8rem 8rem 4.8rem;
+    order: 1;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .caseStudyLayout__columnB{
+      padding: 64rem 4.8rem 4.8rem 4.8rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .caseStudyLayout__columnA{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      order: 1;
+      padding: 0;
+    }
+
+    .caseStudyLayout__columnB{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      order: 2;
+      padding: 16rem 0;
+    }
+  }
+}
